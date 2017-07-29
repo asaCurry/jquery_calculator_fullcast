@@ -1,0 +1,511 @@
+/* @import url('http://example.com/example_style.css'); */
+
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+
+/****************************************/
+/* HubSpot Style Boilerplate            */
+/****************************************/
+
+/* These includes are optional, but helpful. */
+{% include "hubspot/styles/responsive/modules.css" %}
+{% include "hubspot/styles/patches/recommended.css" %}
+
+
+/*****************************************/
+/* Start your style declarations here    */
+/*****************************************/
+
+.body-container .page-center {
+    padding: 30px 15px 30px 15px;
+}
+
+.row-fluid-wrapper {
+    transition: all .3s ease;
+}
+
+/*** tag styles ***/
+
+input {
+    width: 300px !important;
+    border-radius: 10px ;
+    padding: 8px;
+    margin: 0 20px;
+    font-size: 20px;
+}
+
+/*** section styles ***/
+
+.header-section {
+    background-image: linear-gradient(rgba(33,186,158, 0.11) 0%, 
+                                      rgba(33,186,158, 0.11) 100%), 
+                    url("https://cdn2.hubspot.net/hubfs/3105326/Full%20cast%20April%202017%20Theme/Image/fullcast_calculation_hero_image_26jun17.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 72px 0;
+}
+
+.header-copy {
+    max-width: 60%;
+}
+.header-section p {
+    font-size: 18px;
+    line-height: 1.8em;
+    color: black;
+}
+.header-section h1 {
+    font-weight: 500;
+    color: black;
+    margin-bottom: 24px;
+}
+
+.span-6 p {
+    max-width: 300px;
+}
+/*** body sections ***/
+.calc-section {
+    background-color: #515151;
+    position: relative;
+    
+}
+.calc-section p  {
+    text-align: right;
+    color: #fff;
+    font-size: 20px;
+    margin: 4px 0;
+    padding-left: 35%;
+}
+.calc-section h1 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 500;
+}
+.calc-section h2 {
+    color: #fff;
+    font-size: 48px;
+    text-align: center;
+}
+.calc-section > .pleaseCalculate p {
+    text-align: center;
+    font-size: 24px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    margin-top: 4px;
+}
+.note-copy p {
+    margin: 36px 0 36px 0;
+    color: #BFBFBF ;
+}
+
+.input-rows {
+    padding: 20px 0;
+}
+
+.slider-copy
+/*** results div ***/
+.resultsSection {
+    background-color: #DCF3EE;
+}
+.resultsSection h2 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    color: #505050;
+}
+
+.resultsSection h3 {
+
+    font-size: 48px;
+    font-weight: 700;
+    color: #505050;
+    text-transform: none !important;
+    
+}
+.resultsSection p {
+font-size: 20px;
+color: #333333;
+}
+.resultsSection >
+.pipeline-div {
+    padding: 36px;
+}
+.bookings-div {
+    padding: 18px 0;
+    margin: 18px 0;
+}
+/*** button and slider ***/ 
+.submit-row {
+    text-align: center;
+    padding-bottom: 36px;
+}
+.calcSubmit {
+    /* Rectangle 4 Copy 9: */
+background: #25B295;
+border-radius: 8px;
+/* CALCULATE: */
+font-size: 20px;
+color: #FFFFFF;
+margin: 16px auto;
+padding: 8px 48px;
+border: 0;
+font-family: 'Open Sans', helvetica, arial, sans-serif !important;
+}
+/*** up arrow ***/
+
+.arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  
+  border-bottom: 45px solid #26B799;
+  display: inline-block;
+}
+
+/**** chart styles ****/
+.chart-outer-wrapper {
+    padding-top: 48px;
+}
+.chart-container {
+    max-width: 80%;
+    margin: 16px auto;
+    display: flex;
+    justify-content: space-around;
+    max-height: 250px;
+    align-items: flex-end;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #595959 ;
+    padding-bottom: 4px;
+}
+.chart-container p {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+.current {
+    height: 225px;
+    width: 45%;
+    background-color: #595959;
+    position: relative;
+}
+.chart-label {
+    top: -20px;
+    right: 6px;
+    font-size: 16px;
+    text-align: center;
+    
+}
+.after {
+    height: 300px;
+    width: 45%;
+    background-color: #26B799; 
+    position: relative;    
+}
+/* tool tip styles */ 
+
+.tool-tip-icon {
+    height: 16px;
+    width: auto;
+    margin-right: -24px;
+    margin-bottom: 6px;
+}
+
+.tool-tip-bubble {
+    position: absolute;
+    padding: 4px 8px !important;
+    border: 2px solid #ffda44;
+    color: #ffda44 !important;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    top: -42px;
+    right: -44px;
+    border-radius: 10px;
+    font-size: 14px !important;
+}
+.tool-tip-bubble p {
+    padding: 0px !important;
+}
+.tool-tip-box {
+    position: relative;
+}
+
+.tool-tip-box:hover .tool-tip-bubble {
+    opactiy: 1;
+}
+
+.tool-tip-show {
+    opacity: 1 !important;
+}
+/*** section transition classes ***/
+
+.angle-circle {
+    font-size: 56px;
+    color: #26B799;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    border: 3px solid #26B799;
+    text-align: center;
+    line-height: 1em;
+    transition: all .3s ease-in-out;
+    position: absolute;
+    bottom: 24px;
+    right: 48%%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.angle-circle-down {
+    transform: rotate(90deg) !important;
+    margin: 0 !important;
+    transition: all .3s ease-in-out;
+    top: 10px !important;
+}
+
+.calc-section-collapse {
+    height: 80px;
+    transition: all .3s ease;
+}
+.calc-section-collapse .calc-section {
+
+    transition: all .3s ease;
+}
+.calc-section-collapse > .content-wrapper > .row-fluid-wrapper {
+    opacity: 0 !important;
+}
+
+.hiddenOnLoad {
+    height: 120px !important;
+}
+.resultsSection > .pleaseCalculate p {
+    text-align: center;
+    font-size: 24px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    margin-top: 4px;
+}
+
+.pleaseCalculate p {
+    text-align: center;
+}
+
+/*** validation ***/
+
+.requiredField {
+    border: 2px solid red !important;
+    color: red;
+    
+}
+
+.requiredField::after {
+    content:"Please enter quantities.";
+    color: red;
+}
+
+.noShow {
+    display: none !important;
+}
+.disableButton {
+    pointer-events: none !important;
+}
+
+.validatePlease {
+    text-align: left !important;
+}
+/*** media queries ***/ 
+@media (max-width: 1080px) {
+       .calc-section p  {
+    padding-left: 20%;
+}
+}
+@media (max-width: 768px){
+    .header-copy {
+        max-width: 80%;
+    }
+      .widget-type-logo {
+      position: static !important;
+      margin: 0 auto;
+      float: none;
+      text-align: center;
+      }
+      
+    .input-rows {
+        text-align: center;
+    }
+    
+    .input-rows p {
+        text-align: center;
+    }
+    .calc-section p  {
+
+padding-left: 0px;
+}
+    .note-copy p {
+        margin-bottom: 0px;
+        margin-top: 16px;
+    }
+    .slider-outer-wrapper {
+        text-align: center;
+        padding: 0 5%;
+    }
+    .slider-copy p {
+        text-align: center;
+    }  
+    .tool-tip-bubble {
+    position: absolute;
+    padding: 4px 8px;
+    border: 2px solid #ffda44;
+    color: #ffda44 !important;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    top: -42px;
+    right: 10%;
+    border-radius: 10px;
+    font-size: 14px !important;
+}
+
+.chart-outer-wrapper {
+    padding: 48px 5% 0 5%;
+}
+.after{
+    height: 250px;
+    width: 40%;
+}
+.current {
+    width: 40%;
+}
+
+.validatePlease {
+    text-align: center !important;
+}
+}
+
+@media (max-width: 490px){
+    input[type="number"] {
+        max-width: 90%;
+    }
+   .header-copy {
+       max-width: 90%;
+   } 
+  .widget-type-logo {
+      position: static !important;
+      margin: 0 auto;
+      float: none;
+      text-align: center;
+  }
+   .calc-section > .pleaseCalculate p {
+      padding-top: 8px;
+  } 
+  .resultsSection > .pleaseCalculate p {
+      padding-top: 8px;
+  } 
+  
+  .cta-block h2  {
+      font-size: 36px;
+  }
+      .tool-tip-bubble {
+    position: absolute;
+    padding: 4px 8px;
+    border: 2px solid #ffda44;
+    color: #ffda44 !important;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    top: -42px;
+    right: 0%;
+    border-radius: 10px;
+    font-size: 12px !important;
+}
+}
+
+/*** range input reset and styles ***/
+input[type=range] {
+  padding: 0px;
+  margin-top: 24px;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1.1px rgba(0, 0, 0, 0.54), 0px 0px 1px rgba(13, 13, 13, 0.54);
+  background: #26b799;
+  border-radius: 2.7px;
+  border: 0.1px solid #b4b4b4;
+}
+input[type=range]::-webkit-slider-thumb {
+  border: 1px solid #b4b4b4;
+  height: 16px;
+  width: 16px;
+  border-radius: 18px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -3.9px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #2accab;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1.1px rgba(0, 0, 0, 0.54), 0px 0px 1px rgba(13, 13, 13, 0.54);
+  background: #26b799;
+  border-radius: 2.7px;
+  border: 0.1px solid #b4b4b4;
+}
+input[type=range]::-moz-range-thumb {
+  border: 1px solid #b4b4b4;
+  height: 16px;
+  width: 16px;
+  border-radius: 18px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #22a287;
+  border: 0.1px solid #b4b4b4;
+  border-radius: 5.4px;
+  box-shadow: 1px 1px 1.1px rgba(0, 0, 0, 0.54), 0px 0px 1px rgba(13, 13, 13, 0.54);
+}
+input[type=range]::-ms-fill-upper {
+  background: #26b799;
+  border: 0.1px solid #b4b4b4;
+  border-radius: 5.4px;
+  box-shadow: 1px 1px 1.1px rgba(0, 0, 0, 0.54), 0px 0px 1px rgba(13, 13, 13, 0.54);
+}
+input[type=range]::-ms-thumb {
+  border: 1px solid #b4b4b4;
+  height: 16px;
+  width: 16px;
+  border-radius: 18px;
+  background: #ffffff;
+  cursor: pointer;
+  height: 8.4px;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #26b799;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #2accab;
+}
